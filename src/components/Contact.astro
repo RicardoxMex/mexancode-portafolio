@@ -1,0 +1,554 @@
+---
+// Contact Section
+---
+
+<section id="contact" class="contact">
+    <div class="contact-container">
+        <div class="section-header">
+            <span class="section-tag">Contacto</span>
+            <h2 class="section-title">¿Listo para Colaborar?</h2>
+            <p class="section-description">
+                Estoy disponible para nuevos proyectos y oportunidades
+            </p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                        >
+                            <path
+                                d="M3 8L10.89 13.26C11.567 13.672 12.433 13.672 13.11 13.26L21 8M5 19H19C20.105 19 21 18.105 21 17V7C21 5.895 20.105 5 19 5H5C3.895 5 3 5.895 3 7V17C3 18.105 3.895 19 5 19Z"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                    <div class="info-content">
+                        <h4>Email</h4>
+                        <a href="mailto:contact@mexancode.com"
+                            >contact@mexancode.com</a
+                        >
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                        >
+                            <path
+                                d="M17 8H20C20.5304 8 21.0391 8.21071 21.4142 8.58579C21.7893 8.96086 22 9.46957 22 10V20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22H4C3.46957 22 2.96086 21.7893 2.58579 21.4142C2.21071 21.0391 2 20.5304 2 20V10C2 9.46957 2.21071 8.96086 2.58579 8.58579C2.96086 8.21071 3.46957 8 4 8H7M17 8V6C17 5.46957 16.7893 4.96086 16.4142 4.58579C16.0391 4.21071 15.5304 4 15 4H9C8.46957 4 7.96086 4.21071 7.58579 4.58579C7.21071 4.96086 7 5.46957 7 6V8M17 8H7M12 12H12.01"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                    <div class="info-content">
+                        <h4>Disponibilidad</h4>
+                        <p>Abierto a proyectos freelance</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                        >
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <div class="info-content">
+                        <h4>Ubicación</h4>
+                        <p>México</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h4>Sígueme en:</h4>
+                    <div class="social-icons">
+                        <a
+                            href="https://github.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            GitHub
+                        </a>
+                        <a
+                            href="https://linkedin.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            LinkedIn
+                        </a>
+                        <a
+                            href="https://twitter.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Twitter"
+                        >
+                            Twitter
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        placeholder="Tu nombre completo"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="tu@email.com"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Asunto</label>
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        required
+                        placeholder="¿En qué puedo ayudarte?"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                        placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Enviar Mensaje
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">MexAn</span>
+                    <span class="logo-highlight">Code</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p>Desarrollando el futuro, una línea de código a la vez.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Navegación</h4>
+                    <a href="#home">Inicio</a>
+                    <a href="#about">Sobre Mí</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#projects">Proyectos</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <a href="mailto:contact@mexancode.com">Email</a>
+                    <a href="https://github.com">GitHub</a>
+                    <a href="https://linkedin.com">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2024 Ricardo Mex - MexAn Code. Todos los derechos
+                reservados.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .contact {
+        padding: 8rem 2rem;
+        background: #ffffff;
+        border-top: 1px solid #e5e5e5;
+    }
+
+    .contact-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .section-tag {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #666666;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 1.5rem;
+        display: block;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        line-height: 1.2;
+    }
+
+    .section-description {
+        font-size: 1.125rem;
+        color: #666666;
+        max-width: 600px;
+        margin: 2rem auto 0;
+    }
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .info-card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .info-icon {
+        display: none;
+    }
+
+    .info-content h4 {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #666666;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+    }
+
+    .info-content p,
+    .info-content a {
+        font-size: 1.125rem;
+        color: #1a1a1a;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .info-content a:hover {
+        color: #666666;
+    }
+
+    .social-links {
+        padding: 0;
+        background: transparent;
+        border: none;
+    }
+
+    .social-links h4 {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #666666;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .social-icons a {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        background: transparent;
+        border: none;
+        color: #1a1a1a;
+        transition: color 0.2s ease;
+        font-size: 0.95rem;
+        text-decoration: none;
+    }
+
+    .social-icons a:hover {
+        color: #666666;
+    }
+
+    .social-icons a svg {
+        display: none;
+    }
+
+    .contact-form {
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .form-group {
+        margin-bottom: 2rem;
+    }
+
+    .form-group label {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #666666;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 0.75rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 1rem 0;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #e5e5e5;
+        border-radius: 0;
+        color: #1a1a1a;
+        font-size: 1rem;
+        font-family: inherit;
+        transition: border-color 0.2s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-bottom-color: #1a1a1a;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+        color: #cccccc;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem 2.5rem;
+        border-radius: 0;
+        font-weight: 500;
+        font-size: 0.95rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        border: 1px solid #1a1a1a;
+        background: #1a1a1a;
+        color: #ffffff;
+        letter-spacing: 0.5px;
+        width: auto;
+        justify-content: center;
+    }
+
+    .btn:hover {
+        background: #333333;
+        border-color: #333333;
+    }
+
+    .btn svg {
+        display: none;
+    }
+
+    .footer {
+        background: #ffffff;
+        border-top: 1px solid #e5e5e5;
+        padding: 4rem 2rem 2rem;
+    }
+
+    .footer-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer-brand .logo {
+        font-size: 1.25rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        margin-bottom: 1rem;
+        color: #1a1a1a;
+        letter-spacing: -0.5px;
+    }
+
+    .logo-bracket {
+        color: #1a1a1a;
+        font-weight: 400;
+    }
+
+    .logo-text {
+        color: #1a1a1a;
+    }
+
+    .logo-highlight {
+        color: #1a1a1a;
+    }
+
+    .footer-brand p {
+        color: #666666;
+        line-height: 1.7;
+        max-width: 400px;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .footer-column h4 {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #666666;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+    }
+
+    .footer-column a {
+        display: block;
+        color: #1a1a1a;
+        text-decoration: none;
+        margin-bottom: 0.75rem;
+        transition: color 0.2s ease;
+        font-size: 0.95rem;
+    }
+
+    .footer-column a:hover {
+        color: #666666;
+    }
+
+    .footer-bottom {
+        padding-top: 2rem;
+        border-top: 1px solid #e5e5e5;
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        color: #999999;
+        font-size: 0.875rem;
+    }
+
+    @media (max-width: 968px) {
+        .contact {
+            padding: 6rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .footer-links {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .contact {
+            padding: 4rem 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+        }
+
+        .section-description {
+            font-size: 1rem;
+        }
+
+        .footer {
+            padding: 3rem 1.5rem 1.5rem;
+        }
+
+        .social-icons {
+            gap: 1.5rem;
+        }
+    }
+</style>
+
+<script>
+    const form = document.getElementById("contactForm") as HTMLFormElement;
+
+    form?.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // Here you would typically send the form data to a server
+        // For now, we'll just show a success message
+        alert("¡Gracias por tu mensaje! Te contactaré pronto.");
+        form.reset();
+    });
+</script>

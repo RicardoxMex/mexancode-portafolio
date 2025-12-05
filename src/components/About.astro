@@ -1,0 +1,148 @@
+---
+// About Section - Minimalist Design
+---
+
+<section id="about" class="about">
+    <div class="about-container">
+        <div class="section-header">
+            <span class="section-tag">Sobre Mí</span>
+            <h2 class="section-title">Desarrollador Full Stack</h2>
+        </div>
+
+        <div class="about-content">
+            <p>
+                Soy Ricardo Mex, un desarrollador full stack con más de 4 años
+                de experiencia creando soluciones digitales. Me especializo en
+                construir aplicaciones web y móviles modernas, escalables y de
+                alto rendimiento.
+            </p>
+
+            <p>
+                Con experiencia en tecnologías como PHP, TypeScript, React,
+                React Native y Laravel, transformo ideas complejas en soluciones
+                elegantes. Egresado de Ingeniería en Sistemas Computacionales,
+                combino fundamentos sólidos con las últimas tendencias en
+                desarrollo.
+            </p>
+
+            <div class="about-divider"></div>
+
+            <div class="about-skills">
+                <div class="skill-item">
+                    <h4>Enfoque en Calidad</h4>
+                    <p>Código limpio y mejores prácticas</p>
+                </div>
+                <div class="skill-item">
+                    <h4>Innovación Constante</h4>
+                    <p>Aprendiendo nuevas tecnologías</p>
+                </div>
+                <div class="skill-item">
+                    <h4>Soluciones Creativas</h4>
+                    <p>Pensamiento crítico y resolución de problemas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .about {
+        padding: 8rem 2rem;
+        background: #ffffff;
+    }
+
+    .about-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .section-tag {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #666666;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 1.5rem;
+        display: block;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        line-height: 1.2;
+    }
+
+    .about-content {
+        text-align: left;
+    }
+
+    .about-content p {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: #4a4a4a;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-divider {
+        width: 60px;
+        height: 1px;
+        background: #e5e5e5;
+        margin: 3rem 0;
+    }
+
+    .about-skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .skill-item h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 0.5rem;
+    }
+
+    .skill-item p {
+        font-size: 0.95rem;
+        color: #666666;
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 968px) {
+        .about {
+            padding: 6rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .about-skills {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .about {
+            padding: 4rem 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+        }
+
+        .about-content p {
+            font-size: 1rem;
+        }
+    }
+</style>

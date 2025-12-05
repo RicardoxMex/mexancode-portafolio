@@ -1,0 +1,200 @@
+---
+// Hero Section - Minimalist
+---
+
+<section id="home" class="hero">
+	<div class="hero-container">
+		<div class="hero-content">
+			<p class="hero-label">Disponible para proyectos</p>
+
+			<h1 class="hero-title">Ricardo Mex</h1>
+
+			<h2 class="hero-subtitle">Full Stack Developer</h2>
+			
+			<div class="hero-logo">
+				<img src="/logo_sm.webp" alt="MexanCode Logo" />
+			</div>
+
+			<p class="hero-description">
+				Especializado en crear experiencias web modernas y aplicaciones
+				escalables. Transformo ideas en código de calidad.
+			</p>
+
+			<div class="hero-cta">
+				<a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+				<a href="/Ricardo Mex CV.pdf" class="btn btn-secondary" target="_blank">Descargar CV</a>
+				
+				<!-- <a href="#contact" class="btn btn-secondary">Contactar</a> -->
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.hero {
+		position: relative;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 8rem 2rem 4rem;
+		background: #ffffff;
+	}
+
+	.hero-container {
+		max-width: 800px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.hero-content {
+		opacity: 0;
+		animation: fadeIn 0.8s ease-out forwards;
+	}
+
+	@keyframes fadeIn {
+		to {
+			opacity: 1;
+		}
+	}
+
+	.hero-label {
+		font-size: 0.875rem;
+		font-weight: 500;
+		color: #666666;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		margin-bottom: 2rem;
+	}
+
+	.hero-title {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1.1;
+		margin-bottom: 1rem;
+		color: #1a1a1a;
+	}
+
+	.hero-subtitle {
+		font-size: 1.5rem;
+		font-weight: 400;
+		color: #666666;
+		margin-bottom: 2rem;
+	}
+
+	.hero-logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 2rem auto;
+		
+		width: fit-content;
+	}
+
+	.hero-logo img {
+		width: 200px;
+		height: auto;
+		filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+		transition: transform 0.3s ease;
+	}
+
+	.hero-logo img:hover {
+		transform: scale(1.05);
+	}
+
+	.hero-description {
+		font-size: 1.125rem;
+		line-height: 1.8;
+		color: #4a4a4a;
+		margin-bottom: 3rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero-cta {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 1rem 2.5rem;
+		border-radius: 0;
+		font-weight: 500;
+		font-size: 0.95rem;
+		text-decoration: none;
+		transition: all 0.2s ease;
+		cursor: pointer;
+		border: 1px solid #1a1a1a;
+		letter-spacing: 0.5px;
+	}
+
+	.btn-primary {
+		background: #1a1a1a;
+		color: #ffffff;
+	}
+
+	.btn-primary:hover {
+		background: #333333;
+		border-color: #333333;
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: #1a1a1a;
+	}
+
+	.btn-secondary:hover {
+		background: #f5f5f5;
+	}
+
+	@media (max-width: 968px) {
+		.hero {
+			padding: 6rem 2rem 3rem;
+		}
+
+		.hero-title {
+			font-size: 3rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.25rem;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.hero {
+			padding: 5rem 1.5rem 2rem;
+		}
+
+		.hero-title {
+			font-size: 2.5rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.125rem;
+		}
+
+		.hero-logo img {
+			width: 150px;
+		}
+
+		.hero-description {
+			font-size: 1rem;
+		}
+
+		.hero-cta {
+			flex-direction: column;
+		}
+
+		.btn {
+			width: 100%;
+			justify-content: center;
+		}
+	}
+</style>

@@ -1,0 +1,174 @@
+---
+// Navigation Component
+---
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#home" class="logo">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-text">MexAn</span>
+            <span class="logo-highlight">Code</span>
+            <span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="#about">Sobre Mí</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact" class="nav-cta">Contacto</a>
+        </div>
+
+        <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            aria-label="Toggle menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<style>
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: #ffffff;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 1.5rem 0;
+    }
+
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        color: #1a1a1a;
+        letter-spacing: -0.5px;
+    }
+
+    .logo-bracket {
+        color: #1a1a1a;
+        font-weight: 400;
+    }
+
+    .logo-text {
+        color: #1a1a1a;
+    }
+
+    .logo-highlight {
+        color: #1a1a1a;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .nav-links a {
+        color: #666666;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 0.95rem;
+        transition: color 0.2s ease;
+        position: relative;
+    }
+
+    .nav-links a::after {
+        display: none;
+    }
+
+    .nav-links a:hover {
+        color: #1a1a1a;
+    }
+
+    .nav-cta {
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+        font-weight: 400;
+        color: #1a1a1a !important;
+        border-bottom: 1px solid #1a1a1a;
+        padding-bottom: 2px;
+    }
+
+    .nav-cta:hover {
+        background: transparent;
+        transform: none;
+        border-bottom: 1px solid #666666;
+        color: #666666 !important;
+    }
+
+    .mobile-menu-btn {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .mobile-menu-btn span {
+        width: 25px;
+        height: 2px;
+        background: #1a1a1a;
+        transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+        }
+
+        .mobile-menu-btn {
+            display: flex;
+        }
+    }
+</style>
+
+<script>
+    // Navbar scroll effect
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+            navbar?.classList.add("scrolled");
+        } else {
+            navbar?.classList.remove("scrolled");
+        }
+    });
+
+    // Smooth scroll for anchor links
+    document
+        .querySelectorAll<HTMLAnchorElement>('a[href^="#"]')
+        .forEach((anchor) => {
+            anchor.addEventListener("click", (e: Event) => {
+                e.preventDefault();
+                const href = anchor.getAttribute("href");
+                const target = href ? document.querySelector(href) : null;
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
+        });
+</script>

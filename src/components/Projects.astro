@@ -1,0 +1,345 @@
+---
+// Projects Section
+const projects = [
+    {
+        title: "Sistema de tickets",
+        description:
+            "Sistema de tickets para gestionar los tickets de las estaciones de servicio.",
+        tags: [
+            "Laravel",
+            "PHP",
+            "MySQL",
+            "Integration",
+            "API",
+            "TypeScript",
+            "React",
+        ],
+        gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        featured: true,
+    },
+    {
+        title: "Sistema de inventarios",
+        description:
+            "Sistema de inventarios para gestionar los inventarios multi almacenes.",
+        tags: [
+            "Laravel",
+            "PHP",
+            "MySQL",
+            "Integration",
+            "API",
+            "TypeScript",
+            "React",
+        ],
+        gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+        featured: true,
+    },
+];
+---
+
+<section id="projects" class="projects">
+    <div class="projects-container">
+        <div class="section-header">
+            <span class="section-tag">Proyectos</span>
+            <h2 class="section-title">Trabajos Destacados</h2>
+            <p class="section-description">
+                Algunos de los proyectos en los que he trabajado
+            </p>
+        </div>
+
+        <div class="projects-grid">
+            {
+                projects.map((project, index) => (
+                    <div
+                        class={`project-card ${project.featured ? "featured" : ""}`}
+                        style={`animation-delay: ${index * 0.1}s`}
+                    >
+                        <div
+                            class="project-gradient"
+                            style={`background: ${project.gradient}`}
+                        />
+
+                        <div class="project-content">
+                            {project.featured && (
+                                <div class="featured-badge">
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M8 1L10.163 5.38L15 6.12L11.5 9.545L12.326 14.36L8 12.09L3.674 14.36L4.5 9.545L1 6.12L5.837 5.38L8 1Z"
+                                            fill="currentColor"
+                                        />
+                                    </svg>
+                                    Destacado
+                                </div>
+                            )}
+
+                            <h3 class="project-title">{project.title}</h3>
+                            <p class="project-description">
+                                {project.description}
+                            </p>
+
+                            <div class="project-tags">
+                                {project.tags.map((tag) => (
+                                    <span class="project-tag">{tag}</span>
+                                ))}
+                            </div>
+
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    Ver Detalles
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M6 12L10 8L6 4"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+
+        <div class="projects-cta">
+            <p>¿Interesado en colaborar?</p>
+            <a href="#contact" class="btn btn-primary">
+                Hablemos de tu proyecto
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                        d="M7.5 15L12.5 10L7.5 5"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .projects {
+        padding: 8rem 2rem;
+        background: #ffffff;
+        border-top: 1px solid #e5e5e5;
+    }
+
+    .projects-container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .section-tag {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #666666;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 1.5rem;
+        display: block;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        line-height: 1.2;
+    }
+
+    .section-description {
+        font-size: 1.125rem;
+        color: #666666;
+        max-width: 600px;
+        margin: 2rem auto 0;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .project-card {
+        border: 1px solid #e5e5e5;
+        padding: 2.5rem;
+        transition: border-color 0.2s ease;
+        opacity: 0;
+        animation: fadeIn 0.6s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    .project-card:hover {
+        border-color: #1a1a1a;
+    }
+
+    .project-gradient {
+        display: none;
+    }
+
+    .project-content {
+        padding: 0;
+    }
+
+    .featured-badge {
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: #666666;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 1rem;
+        line-height: 1.3;
+    }
+
+    .project-description {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #666666;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-tag {
+        font-size: 0.875rem;
+        color: #666666;
+        font-weight: 400;
+    }
+
+    .project-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .project-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #1a1a1a;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 0.95rem;
+        border-bottom: 1px solid #1a1a1a;
+        padding-bottom: 2px;
+        transition: all 0.2s ease;
+    }
+
+    .project-link:hover {
+        color: #666666;
+        border-bottom-color: #666666;
+    }
+
+    .project-link svg {
+        display: none;
+    }
+
+    .projects-cta {
+        text-align: center;
+        padding: 4rem 0;
+        border-top: 1px solid #e5e5e5;
+    }
+
+    .projects-cta p {
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: #666666;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem 2.5rem;
+        border-radius: 0;
+        font-weight: 500;
+        font-size: 0.95rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        border: 1px solid #1a1a1a;
+        background: #1a1a1a;
+        color: #ffffff;
+        letter-spacing: 0.5px;
+    }
+
+    .btn:hover {
+        background: #333333;
+        border-color: #333333;
+    }
+
+    .btn svg {
+        display: none;
+    }
+
+    @media (max-width: 968px) {
+        .projects {
+            padding: 6rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .projects {
+            padding: 4rem 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+        }
+
+        .section-description {
+            font-size: 1rem;
+        }
+
+        .project-card {
+            padding: 2rem;
+        }
+
+        .projects-cta {
+            padding: 3rem 0;
+        }
+
+        .projects-cta p {
+            font-size: 1rem;
+        }
+    }
+</style>
